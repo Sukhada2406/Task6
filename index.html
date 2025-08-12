@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="left">
+        <h2>Let's get in touch</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="info">📍 92 Cherry Drive Uniondale, NY 11553</div>
+        <div class="info">📧 lorem@ipsum.com</div>
+        <div class="info">📞 123-456-789</div>
+        <p>Connect with us:</p>
+        <div class="social">
+            <a href="#">A</a>
+            <a href="#">B</a>
+            <a href="#">C</a>
+            <a href="#">D</a>
+        </div>
+    </div>
+    <div class="right">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div>
+                <input type="text" id="name" placeholder="Name">
+                <div class="error" id="nameError"></div>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Email">
+                <div class="error" id="emailError"></div>
+            </div>
+            <div>
+                <textarea id="message" placeholder="Message"></textarea>
+                <div class="error" id="messageError"></div>
+            </div>
+            <button type="submit">Submit</button>
+            <div id="successMessage" class="success" style="display:none;">Form submitted successfully!</div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
